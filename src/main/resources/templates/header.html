@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Flores</title>
+    <meta th:replace="~{Common/cssBase :: css_Base}">
+
+</head>
+<body>
+    <header>
+        <div class="card">
+            <div class="card text-center" style="background-color: #ffc600; color: #d4720b;">
+                <div class="card-body">
+                    <h1 class="banner-title">Lista de flores</h1>
+                    <p class="banner-subtitle">Selecciona las flores de tu preferencia</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="dropdown d-none d-lg-inline-block ms-1">
+                    <a href="#" type="button" class="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
+                        <i class="ri-playstation-line"></i>
+                    </a>
+                </div>
+                <div class="dropdown d-inline-block">
+                    <button type="button" class="btn header-item noti-icon waves-effect">
+                        <a href="#">
+                            <i  class="ri-shopping-cart-2-fill"></i>
+                        </a>
+                    </button>
+                </div>
+                <div class="dropdown d-inline-block">
+                    <button type="button" class="btn header-item noti-icon waves-effect">
+                        <a href="#">
+                            <i  class=" ri-list-check"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <span th:replace="~{Common/jsBase :: js_Base}"></span>
+    </header>
+</body>
+
+</html>
